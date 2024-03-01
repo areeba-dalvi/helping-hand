@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+html{
+    scroll-behavior: smooth;   
+}
+
+nav{
+    margin-right: 70px;
+}
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 3px 1px;
+    font-weight: bold;
+}
+
+.active{
+    border-color:orange;
+}
+
+nav a:hover{
+    border-color:orange ;
+
+}
+
+ .text h3{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
+    position: relative;
+ }
+
+ .text h3::before{
+    content: 'SINCE 2005';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+    transition: 1s ease-in-out;
+ }
+
+ .text h3:hover::before{
+    width: 100%;
+ }
+ #progress{
+    /* background-color: green; */
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color:#ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+
+
+.mystyle{
+    color: yellow;
+}
+
+.slider1{
+    background-image: url(images/Slider-1.jpg);
+    object-fit: cover;
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: fit-content;
+    height: 425px;;
+}
+
+.slider2{
+    background-image: url(images/Slider-2.jpg);
+    object-fit: cover;
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: fit-content;
+    height:425px;
+  }
+
+.slider3{
+    background-image: url(images/Slider-3.png);
+    object-fit: cover;
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: fit-content;
+    height: 425px;
+  }
+
+
+
+
+.donation-section{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.donation-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #F59E0B 60%, #F59E0B 40.1%);
+}
+
+.donation-container .donation-form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.donation-container .donation-form .donation-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.donation-container .donation-form .donation-row .donation-col{
+  flex:1 1 250px;
+}
+
+.donation-container .donation-form .donation-row .donation-col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.donation-container .donation-form .donation-row .donation-col .inputBox{
+  margin:15px 0;
+}
+
+.donation-container .donation-form .donation-row .donation-col .inputBox .donation-span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.donation-container .donation-form .donation-row .donation-col .inputBox .donation-input{
+  width: 100%;
+  border: 1px solid #ccc;
+  padding:8px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.donation-container .donation-form .donation-row .donation-col .inputBox .donation-input:focus{
+  border: 1px solid #000;
+}
+
+.donation-container .donation-form .donation-row .donation-col .flexs{
+  display: flex;
+  gap: 15px;
+}
+
+.donation-container .donation-form .donation-row .donation-col .flexs .inputBox{
+  margin-top: 5px;
+}
+
+.donation-container .donation-form .donation-row .donation-col .inputBox .card-image{
+  height: 40px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.donation-container .donation-form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #F59E0B;
+  color:black;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.donation-container .donation-form .submit-btn:hover{
+  background: #F59E0B;
+} 
+
+  
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+    min-height: 100vh;
+     padding: 2rem 2% 1rem;/* Adjusted padding */
+
+}
+  
+.contact h2{
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact form{
+    max-height: 50rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+  
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: black;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid orange;
+}
+.contact form .input-box .input-field::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: black;
+}
+.contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#fde68a;
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus{
+    width: 100%;
+}
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea{
+    resize: none;
+}
+.contact form .btn-box.btns .btn{
+    cursor: pointer; 
+}
+
+.btn-box.btns{
+    display: inline-block;
+    width: 10rem;
+}
+.btn-box .btn a::before{
+    background: #F0AC1A;
+}
+
+
+.btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    height: 4rem;
+}
+.btn-box .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 100%;
+    background: #F0AC1A;
+    border: .2rem solid orange;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color:black;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box .btn:hover{
+    color: white;
+    border: .2rem solid black;
+}
+.btn-box .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:black;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: #F0AC1A;
+}
+.btn-box .btn:nth-child(2):hover{
+    color: black;
+}
+.btn-box .btn:nth-child(2)::before{
+    background: #F0AC1A;
+}
+.btn-box .btn:hover::before{
+    width: 100%;
+}
+.testimonialssection{
+background-image: linear-gradient(#000,#000)url(images/background\ image.jpeg);
+}
+
+  /* keyframe animations */  
+  @keyframes showRight{
+    100%{
+      width: 0;
+    }
+  }
+  
+  
+
+
+ 
+
+
+
+
+
+
+
+/* Medium screens (md) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .slider1,
+    .slider2,
+    .slider3 {
+    object-fit: cover;
+    background-size: 55rem;
+    background-repeat: no-repeat;
+    background-position: bottom; /* Adjust as needed for medium screens */
+    }
+}
+
+/* Large screens (lg) */
+@media (min-width: 993px) {
+    .slider1,
+    .slider2,
+    .slider3 {
+        object-fit: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        /* background-position: bottom; Adjust as needed for medium screens */
+          }
+}
+
+
+
+/* @media(max-width: 1200px){
+    html{
+      font-size: 55%;
+    }
+  } */
+  @media(max-width: 991px){
+    
+    .conatct{
+      padding: 10rem 4% 2rem;
+    }
+    
+  }
+ 
+  
+  /* @media(max-width:520px){
+  html{
+    font-size: 50%;
+  }
+} */
+  @media(max-width:462px){
+  .contact form .input-box .input-field{
+    width: 100%;
+  } 
+  }
+ 
+  
